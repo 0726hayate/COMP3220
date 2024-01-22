@@ -9,6 +9,7 @@ public class CSquare extends CRectangle{
 
     //Constructor
     public CSquare(int length){
+        //CSquare has 1 parameter, length which determines the size of the square, it is a number between 1-100 generated in CCanvas through the makeShape method
         super(length,length);
     }
 

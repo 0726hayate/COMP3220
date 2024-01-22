@@ -5,8 +5,6 @@
 *Main method to generate a canvas and 10 random shapes in the console
 */
 
-import javax.swing.*;
-
 public class Main {
     public static void main(String[] args) {
 

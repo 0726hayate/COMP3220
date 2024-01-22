@@ -7,7 +7,9 @@
 */
 public class CRectangle extends CShape{
 
+    //a random number between 1-100 that determines the length of the rectangle, generated in CCanvas through the makeShape method
     private int length;
+    //a random number between 1-100 that determines the width of the rectangle, generated in CCanvas through the makeShape method
     private int width;
 
     //Constructor

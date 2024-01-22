@@ -9,6 +9,7 @@ public class CCircle extends COval{
 
     //Constructor
     public CCircle(int radius){
+        //CCircle has 1 parameter, radius which determines the size of the circle, it is a number between 1-100 generated in CCanvas through the makeShape method
         super(radius, radius);
     }
 

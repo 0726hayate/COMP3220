@@ -9,7 +9,9 @@
 import java.util.ArrayList;
 import java.util.List;
 public class CCanvas {
+    //a list that will hold the random shapes generated
     private List <CShape> shapes;
+    //a variable to make sure that the number of random shapes generated is 10
     private static final int maxShapes = 10;
 
     //Constructor
@@ -32,16 +34,19 @@ public class CCanvas {
         }
     }
 
-    /**Method to generate a random shape based on a random number from 0 to 3
+    /**Method to generate a random shape based on a random number from 0 to 3 with random dimensions from 1 to 100
      * @param: no parameters
      * @return: none
      */
     private CShape makeShape(){
-        // 0 - Circle, 1 - Oval, 2 - Rectangle, 3 - Square
+        //generates a random number between 0 to 3 to dtermine the shape generated in the switch statement below
         int type = (int) (Math.random() * 4);
+        //generates a random number between 1 - 100 for the vertical dimensions of the shape
         int length = (int) (Math.random() * 100) + 1;
+        //generates a random number between 1 - 100 for the horizontal dimensions of the shape
         int width = (int) (Math.random() * 100) + 1;
 
+        //determines the random shape generated based on a random number from 0 to 3, 0 - Circle, 1 - Oval, 2 - Rectangle, 3 - Square
         switch (type) {
             case 0: return new CCircle(length);
             case 1: return new COval(length, width);

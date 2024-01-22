@@ -11,7 +11,7 @@ public abstract class CShape {
 
     //Keeps count of the id
     private static int idCounter = 1;
-    //unique id of each shape
+    //unique id of each shape, must be positive
     private final int id;
 
 
